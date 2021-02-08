@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <h1>Hello</h1>
+    <NavBar/>
+    <Banner/>
   </div>
 </template>
 
 <script>
-
+import Banner from "./components/Banner"
+import NavBar from "./components/NavBar"
 export default {
   name: 'App',
   components: {
+    NavBar,
+    Banner
   }
 }
 </script>
