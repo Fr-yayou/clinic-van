@@ -1,6 +1,6 @@
 <template>
   <div class="container-navBar">
-        <h5 id="logo">Logo</h5>
+      <img v-bind:src="Logo" alt="logo"/>
         <div v-if="!isOpen" v-on:click="toogleHamburger" class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -18,12 +18,14 @@
 </template>
 
 <script>
+import Logo from "../assets/logo.png"
 export default {
     name:"NavBar",
 
     data(){
         return{
-            isOpen:false 
+            isOpen:false ,
+            Logo:Logo
         }
     },
 
@@ -45,6 +47,19 @@ export default {
     display: flex;
     justify-content: space-between;
     z-index: 1;
+}
+
+.container-navBar img {
+    margin-left: 15px;
+}
+
+.nav-links li {
+    display: flex;
+    align-content: center;
+}
+
+.nav-links li:hover{
+    color:#34E1E7;
 }
 
 .nav-links li button{
@@ -92,7 +107,8 @@ export default {
         position: absolute;
         cursor: pointer;
         margin-top: 25px;
-        margin-left: 15px;
+        margin-right: 15px;
+        right: 0px;
     }
 
 
