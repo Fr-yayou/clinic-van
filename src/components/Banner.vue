@@ -1,17 +1,19 @@
 <template>
   <div class="container-heroImage">
-      <div class="heroImage" :style="{backgroundImage:`url('${imageHero}')`}"></div>
+      <!-- <div class="heroImage" :style="{backgroundImage:`url('${imageHero}')`}"></div> -->
+      <img class="heroImage" v-lazy="imageHero"/>
   </div>
 </template>
 
 <script>
-import imageHero from "../assets/hero.jpg"
+import imageHero from "../assets/hero.png"
 export default {
     name:"Banner",
 
     data(){
         return{
             imageHero:imageHero
+
         }
     }
 }
@@ -26,11 +28,11 @@ export default {
 .heroImage{
     width: 100%;
     height: 600px;
-    overflow: hidden;
+    /* overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     opacity:0.8;;
-    background-position: center center;
+    background-position: center center; */
     
 
 }
