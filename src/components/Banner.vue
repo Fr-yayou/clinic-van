@@ -2,9 +2,12 @@
   <div class="container-heroImage" :style="{backgroundImage:`url('${imageHero}')`}">
       <div class="container-text">
           <p>We are here to improve the community's</p>
-          <p>Physical health, mental health</p>
+          <br>
+          <p>Physical health, mental health,</p>
+          <br>
           <p>sports performance and</p>
-          <p>quality of life</p>
+          <br>
+          <p>quality of life.</p>
       </div>
   </div>
 </template>
@@ -49,21 +52,10 @@ export default {
     }
     .container-text p{
         color:#001b36;
-        font-size:30px;
+        font-size:35px;
         background-color:white;
         margin-bottom: 5px;
-
-
-
-    }
-    .container-text span{
-        color:#001b36;
-        font-size:30px;
-        background-color:white;
-        margin-bottom: 5px;
-
-
-
+        display: inline-block
     }
 }
 
