@@ -35,7 +35,20 @@ export default {
     background-size: 100%;
     background-position: top left; 
 }
-
+.container-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+.container-text p{
+    color:#001b36;
+    font-size:17px;
+    background-color:white;
+    margin-bottom: 5px;
+    display: inline-block
+}
 
 @media screen and (min-width:768px){
     .container-heroImage{
@@ -49,6 +62,7 @@ export default {
         top: 50%;
         left: 40%;
         transform: translate(-50%, -50%);
+        width: unset;
     }
     .container-text p{
         color:#001b36;
