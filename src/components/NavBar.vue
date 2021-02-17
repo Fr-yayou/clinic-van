@@ -8,10 +8,9 @@
         </div>
         <div v-else v-bind:class="{close:isOpen}" v-on:click="toogleHamburger"></div>
         <ul class="nav-links" v-bind:class="{linksOpen:isOpen}">
-            <li>Home</li>
-            <li>Example</li>
-            <li>Example</li>
-            <li>Example</li>
+            <li>Health Services</li>
+            <li>Our Team</li>
+            <li>Blog</li>
             <li><button>BOOK NOW</button></li>
         </ul>
   </div>
@@ -43,7 +42,7 @@ export default {
 <style>
 .container-navBar{
     height: 80px;
-    background-color: black;
+    background-color:#001b36;
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -63,16 +62,16 @@ export default {
 }
 
 .nav-links li button{
-    background-color: black;
-    color:#34E1E7;
-    border: 1px solid #34E1E7;
+    background-color: #001b36;
+    color:white;
+    border: 1px solid white;
     padding:10px
 }
 .nav-links li button:focus{
     outline: none;
-    background-color: #34E1E7 ;
-    color:black;
-    border: 1px solid #34E1E7 ;
+    background-color: white ;
+    color:#001b36;
+    border: 1px solid #001b36 ;
 }
 
 .nav-links{
@@ -88,6 +87,21 @@ export default {
     color: white;
     align-self: center;
     padding-left: 30px;
+}
+.nav-links li:nth-child(1) {
+    border-right: 3px solid white;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+    
+.nav-links li:nth-child(2) {
+    border-right: 3px solid white;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width:768px){
@@ -114,7 +128,7 @@ export default {
 
     .nav-links{
         position:fixed;
-        background-color:black;
+        background-color:#001b36 ;
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -153,13 +167,27 @@ export default {
     height: 33px;
     width: 2px;
     margin-left: 15px;
-    background-color:#34E1E7; ;
+    background-color:white;
 }
     .close:before {
     transform: rotate(45deg);
     }
     .close:after {
     transform: rotate(-45deg);
+    }
+    
+    .nav-links li:nth-child(1) {
+        border-right:none;
+        width: unset;
+        height: unset;
+        display: unset;
+    }
+    
+    .nav-links li:nth-child(2) {
+        border-right: none;
+        width: unset;
+        height: unset;
+        display: unset;
     }
 
     

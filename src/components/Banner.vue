@@ -1,7 +1,11 @@
 <template>
-  <div class="container-heroImage">
-      <!-- <div class="heroImage" :style="{backgroundImage:`url('${imageHero}')`}"></div> -->
-      <img class="heroImage" v-lazy="imageHero"/>
+  <div class="container-heroImage" :style="{backgroundImage:`url('${imageHero}')`}">
+      <div class="container-text">
+          <p>We are here to improve the community's</p>
+          <p>Physical health, mental health</p>
+          <p>sports performance and</p>
+          <p>quality of life</p>
+      </div>
   </div>
 </template>
 
@@ -21,25 +25,45 @@ export default {
 
 <style scoped>
 .container-heroImage{
-    background-color: black;
-    width: 100%;
-    max-width: 100%;
-}
-.heroImage{
-    width: 100%;
-    height: 600px;
-    /* overflow: hidden;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity:0.8;;
-    background-position: center center; */
-    
-
+    background-size: 100%;
+    background-position: top left; 
 }
 
-@media sreen and (max-width:768px){
+
+@media screen and (min-width:768px){
     .container-heroImage{
-        height: 900px;
+        height: 700px;
+        background-size: 100%;
+        background-position: top left; 
+
+    }
+    .container-text{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .container-text p{
+        color:#001b36;
+        font-size:30px;
+        background-color:white;
+        margin-bottom: 5px;
+
+
+
+    }
+    .container-text span{
+        color:#001b36;
+        font-size:30px;
+        background-color:white;
+        margin-bottom: 5px;
+
+
+
     }
 }
 
