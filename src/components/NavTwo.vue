@@ -87,6 +87,7 @@ export default {
 .nav-links li{
     color:white;
     list-style: none; 
+    font-family: "futura";
 }
 .nav-links button{
     background-color: #001b36;

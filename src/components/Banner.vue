@@ -39,16 +39,17 @@ export default {
 .container-text{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 400px;
 }
 .container-text p{
     color:#001b36;
     font-size:17px;
     background-color:white;
     margin-bottom: 5px;
-    display: inline-block
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* IPAD */
@@ -81,7 +82,8 @@ export default {
 
 @media screen and (min-width:1339px){
     .container-text{
-        left:35%
+        left:35%;
+        width: 800px;
     }
     .container-text p{
         font-size:35px;

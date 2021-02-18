@@ -50,7 +50,7 @@ export default {
 }
 
 .circle{
-        background-color: white;
+        background-color:#FFFDE7;
         height: 40px;
         width: 40px;
         border-radius: 50%;
@@ -67,6 +67,7 @@ export default {
     color: white;
     font-size: 20px;
     text-align: center;
+    font-family: "futura-medium";
 }
 
 .sub-mission-text{
@@ -76,6 +77,7 @@ export default {
     color: white;
     opacity: 0.7;
     text-align: center;
+    font-family: "futura-light";
 
 }
 
