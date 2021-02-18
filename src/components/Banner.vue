@@ -27,6 +27,7 @@ export default {
 </script>
 
 <style scoped>
+/* Phone */
 .container-heroImage{
     height: 400px;
     overflow: hidden;
@@ -50,6 +51,8 @@ export default {
     display: inline-block
 }
 
+/* IPAD */
+
 @media screen and (min-width:768px){
     .container-heroImage{
         height: 700px;
@@ -67,10 +70,21 @@ export default {
     }
     .container-text p{
         color:#001b36;
-        font-size:35px;
+        font-size:30px;
         background-color:white;
         margin-bottom: 5px;
         display: inline-block;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1339px){
+    .container-text{
+        left:35%
+    }
+    .container-text p{
+        font-size:35px;
     }
 }
 
