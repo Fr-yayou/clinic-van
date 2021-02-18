@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <NavBar/>
+    <!-- <NavBar/> -->
+    <NavTwo/>
     <Banner/>
     <Mission/>
   </div>
@@ -8,14 +9,16 @@
 
 <script>
 import Banner from "./components/Banner"
-import NavBar from "./components/NavBar"
+// import NavBar from "./components/NavBar"
 import Mission from "./components/Missions"
+import NavTwo from "./components/NavTwo"
 export default {
   name: 'App',
   components: {
-    NavBar,
+    // NavBar,
     Banner,
-    Mission
+    Mission,
+    NavTwo
   }
 }
 </script>

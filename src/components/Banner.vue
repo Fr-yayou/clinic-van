@@ -63,13 +63,14 @@ export default {
         left: 40%;
         transform: translate(-50%, -50%);
         width: unset;
+        width: 600px;
     }
     .container-text p{
         color:#001b36;
         font-size:35px;
         background-color:white;
         margin-bottom: 5px;
-        display: inline-block
+        display: inline-block;
     }
 }
 

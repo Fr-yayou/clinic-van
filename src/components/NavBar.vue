@@ -11,7 +11,7 @@
             <li>Health Services</li>
             <li>Our Team</li>
             <li>Blog</li>
-            <li><button>BOOK NOW</button></li>
+            <button>BOOK NOW</button>
         </ul>
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {
     color:#34E1E7;
 }
 
-.nav-links li button{
+.nav-links button{
     background-color: #001b36;
     color:white;
     border: 1px solid white;
@@ -77,7 +77,7 @@ export default {
 .nav-links{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
     align-items: center;
     color:white;
     list-style: none;
@@ -90,19 +90,31 @@ export default {
 }
 .nav-links li:nth-child(1) {
     border-right: 3px solid white;
-    width: 130px;
     height: 30px;
     display: flex;
+    padding-right: 25px;
     align-items: center;
 }
     
 .nav-links li:nth-child(2) {
     border-right: 3px solid white;
-    width: 130px;
     height: 30px;
     display: flex;
+    padding-right: 25px;
     align-items: center;
 }
+
+@media only screen and (min-width:768px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media only screen and (min-width:1339px){
+    .nav-links{
+        width: 0%;
+    }
+}
+
 
 @media screen and (max-width:768px){
 
