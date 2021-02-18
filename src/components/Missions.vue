@@ -92,5 +92,14 @@ export default {
 }
 
 /* Desktop */
+@media screen and (min-width:1339px){
+    .mission-title h1{
+    font-size: 35px;
+    }
+    
+    .mission-text p {
+        font-size:25px
+    }
+}
 
 </style>
