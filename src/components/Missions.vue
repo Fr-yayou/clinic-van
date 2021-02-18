@@ -10,6 +10,12 @@
                 <p>patient-centred healthcare to the beautiful community of<p>
                 <p>Horseshoe Bay and surrounding areas.</p>
             </div>
+            <div class="sub-mission-text">
+                <p>A specialized team of experienced physical and mental health practitioners will guide</p>
+                <p>patients’ recovery using evidence-based treatment plans. Our goal is to increase</p>
+                <p>access to quality healthcare and ultimately improve the community’s physical health,</p>
+                <p>mental health, sports performance and quality of life.</p>
+            </div>
         </div>
     </div>
 </template>
@@ -59,7 +65,18 @@ export default {
 
 .mission-text p {
     color: white;
+    font-size: 20px;
     text-align: center;
+}
+
+.sub-mission-text{
+    padding-bottom: 70px;
+    padding-top: 40px;
+    font-size: 15px;
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+
 }
 
 /* Ipad */
@@ -89,6 +106,11 @@ export default {
         color: white;
         text-align: unset;
     }
+
+    .sub-mission-text{
+        padding-top: 30px;
+        text-align: unset;
+    }
 }
 
 /* Desktop */
@@ -99,6 +121,11 @@ export default {
     
     .mission-text p {
         font-size:25px
+    }
+
+    .sub-mission-text{
+        font-size: 20px;
+        padding-bottom: 100px;
     }
 }
 
