@@ -22,18 +22,51 @@ export default {
 
 <style scoped>
 
+/* Phone */
+
+.mission-container{
+    position: relative;
+    background-color: #001b36;
+}
+
+.mission-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.mission-title h1{
+    color:#001b36;
+    background-color: white;
+    font-size: 25px;
+}
+
+.circle{
+        background-color: white;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+.mission-text {
+    padding-top: 25px;
+}
+
+.mission-text p {
+    color: white;
+    text-align: center;
+}
+
+/* Ipad */
 
 @media screen and (min-width:768px){
     .mission-container{
         padding-top: 50px;
-        background-color: #001b36;
-        position: relative;
-
-    }
-
-    .mission-title h1{
-        color:#001b36;
-        background-color: white;
     }
     .mission-text p{
         color:#FAF2E8;
@@ -41,14 +74,8 @@ export default {
     }
     
     .circle{
-        background-color: white;
         height: 60px;
         width: 60px;
-        border-radius: 50%;
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .mission-content{
@@ -58,6 +85,12 @@ export default {
         margin-left: 45%;
         padding-top: 60px;
     }
+    .mission-text p {
+        color: white;
+        text-align: unset;
+    }
 }
+
+/* Desktop */
 
 </style>
